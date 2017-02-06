@@ -14,6 +14,7 @@
 		B7F67EAB1E48657E0052699E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7F67EA91E48657E0052699E /* LaunchScreen.storyboard */; };
 		B7F67EB61E48657E0052699E /* GYVideoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F67EB51E48657E0052699E /* GYVideoTests.swift */; };
 		B7F67EC11E48657E0052699E /* GYVideoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F67EC01E48657E0052699E /* GYVideoUITests.swift */; };
+		BD938B6D3926AA04639D83B1 /* Pods_GYVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABC3BF72F229FEDD38D404D6 /* Pods_GYVideo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +35,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		70988FE9219C5964D1A962B7 /* Pods-GYVideo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GYVideo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GYVideo/Pods-GYVideo.debug.xcconfig"; sourceTree = "<group>"; };
+		848D37A4284D334DB7855E5E /* Pods-GYVideo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GYVideo.release.xcconfig"; path = "Pods/Target Support Files/Pods-GYVideo/Pods-GYVideo.release.xcconfig"; sourceTree = "<group>"; };
+		ABC3BF72F229FEDD38D404D6 /* Pods_GYVideo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GYVideo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7F67E9D1E48657E0052699E /* GYVideo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GYVideo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7F67EA01E48657E0052699E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B7F67EA21E48657E0052699E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -54,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD938B6D3926AA04639D83B1 /* Pods_GYVideo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +79,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		117F2B03A75A8EBF2CA6E218 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ABC3BF72F229FEDD38D404D6 /* Pods_GYVideo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		210034F35B70D89C147A611D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				70988FE9219C5964D1A962B7 /* Pods-GYVideo.debug.xcconfig */,
+				848D37A4284D334DB7855E5E /* Pods-GYVideo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		B7F67E941E48657D0052699E = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +103,8 @@
 				B7F67EB41E48657E0052699E /* GYVideoTests */,
 				B7F67EBF1E48657E0052699E /* GYVideoUITests */,
 				B7F67E9E1E48657E0052699E /* Products */,
+				210034F35B70D89C147A611D /* Pods */,
+				117F2B03A75A8EBF2CA6E218 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -132,9 +156,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B7F67EC51E48657E0052699E /* Build configuration list for PBXNativeTarget "GYVideo" */;
 			buildPhases = (
+				DFD7E1A17E0B3777A6280073 /* [CP] Check Pods Manifest.lock */,
 				B7F67E991E48657E0052699E /* Sources */,
 				B7F67E9A1E48657E0052699E /* Frameworks */,
 				B7F67E9B1E48657E0052699E /* Resources */,
+				369E41CD8BE8FAAFAFDD8B9A /* [CP] Embed Pods Frameworks */,
+				F171DD615C184679A54AB1AE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -256,6 +283,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		369E41CD8BE8FAAFAFDD8B9A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GYVideo/Pods-GYVideo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DFD7E1A17E0B3777A6280073 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F171DD615C184679A54AB1AE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GYVideo/Pods-GYVideo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B7F67E991E48657E0052699E /* Sources */ = {
@@ -411,6 +486,7 @@
 		};
 		B7F67EC61E48657E0052699E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 70988FE9219C5964D1A962B7 /* Pods-GYVideo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = UZZG6NM74T;
@@ -424,6 +500,7 @@
 		};
 		B7F67EC71E48657E0052699E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 848D37A4284D334DB7855E5E /* Pods-GYVideo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = UZZG6NM74T;
