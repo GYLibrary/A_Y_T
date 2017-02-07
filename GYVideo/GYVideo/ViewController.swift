@@ -9,7 +9,7 @@
 import UIKit
 import AVKit
 import AVFoundation
-
+import MediaPlayer
 
 class ViewController: UIViewController {
 

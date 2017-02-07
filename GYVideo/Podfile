@@ -4,5 +4,6 @@ use_frameworks!
 target 'GYVideo' do
     
     pod 'Alamofire'
+    pod 'SnapKit', '~> 3.1.2'
     
 end
