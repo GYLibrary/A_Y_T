@@ -7,5 +7,5 @@ target 'GYVideo' do
     pod 'SnapKit', '~> 3.1.2'
     # pod 'SwiftDrawEnum'
     pod 'GYNetWorking','~> 0.0.9'
-    
+    pod 'DGElasticPullToRefresh'
 end
