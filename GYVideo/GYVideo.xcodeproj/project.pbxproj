@@ -14,6 +14,8 @@
 		B7F67EAB1E48657E0052699E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7F67EA91E48657E0052699E /* LaunchScreen.storyboard */; };
 		B7F67EB61E48657E0052699E /* GYVideoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F67EB51E48657E0052699E /* GYVideoTests.swift */; };
 		B7F67EC11E48657E0052699E /* GYVideoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F67EC01E48657E0052699E /* GYVideoUITests.swift */; };
+		B7F67EE41E49B4CD0052699E /* GYVideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F67EE31E49B4CD0052699E /* GYVideoCell.swift */; };
+		B7F67EE81E49B84D0052699E /* GYLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F67EE71E49B84D0052699E /* GYLabel.swift */; };
 		BD938B6D3926AA04639D83B1 /* Pods_GYVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABC3BF72F229FEDD38D404D6 /* Pods_GYVideo.framework */; };
 /* End PBXBuildFile section */
 
@@ -51,6 +53,8 @@
 		B7F67EBC1E48657E0052699E /* GYVideoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GYVideoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7F67EC01E48657E0052699E /* GYVideoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GYVideoUITests.swift; sourceTree = "<group>"; };
 		B7F67EC21E48657E0052699E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B7F67EE31E49B4CD0052699E /* GYVideoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GYVideoCell.swift; sourceTree = "<group>"; };
+		B7F67EE71E49B84D0052699E /* GYLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GYLabel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,8 +125,10 @@
 		B7F67E9F1E48657E0052699E /* GYVideo */ = {
 			isa = PBXGroup;
 			children = (
+				B7F67EE61E49B8290052699E /* Tools */,
 				B7F67EA01E48657E0052699E /* AppDelegate.swift */,
 				B7F67EA21E48657E0052699E /* ViewController.swift */,
+				B7F67EE31E49B4CD0052699E /* GYVideoCell.swift */,
 				B7F67EA41E48657E0052699E /* Main.storyboard */,
 				B7F67EA71E48657E0052699E /* Assets.xcassets */,
 				B7F67EA91E48657E0052699E /* LaunchScreen.storyboard */,
@@ -147,6 +153,14 @@
 				B7F67EC21E48657E0052699E /* Info.plist */,
 			);
 			path = GYVideoUITests;
+			sourceTree = "<group>";
+		};
+		B7F67EE61E49B8290052699E /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				B7F67EE71E49B84D0052699E /* GYLabel.swift */,
+			);
+			path = Tools;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -337,6 +351,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B7F67EE81E49B84D0052699E /* GYLabel.swift in Sources */,
+				B7F67EE41E49B4CD0052699E /* GYVideoCell.swift in Sources */,
 				B7F67EA31E48657E0052699E /* ViewController.swift in Sources */,
 				B7F67EA11E48657E0052699E /* AppDelegate.swift in Sources */,
 			);
@@ -589,6 +605,7 @@
 				B7F67EC71E48657E0052699E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B7F67EC81E48657E0052699E /* Build configuration list for PBXNativeTarget "GYVideoTests" */ = {
 			isa = XCConfigurationList;
@@ -597,6 +614,7 @@
 				B7F67ECA1E48657E0052699E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B7F67ECB1E48657E0052699E /* Build configuration list for PBXNativeTarget "GYVideoUITests" */ = {
 			isa = XCConfigurationList;
@@ -605,6 +623,7 @@
 				B7F67ECD1E48657E0052699E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
