@@ -68,15 +68,18 @@ class GYVideoCell: UITableViewCell {
             self.contentView.addSubview(bgImage!)
             
             bgImage?.translatesAutoresizingMaskIntoConstraints = false
-            let top: NSLayoutConstraint = NSLayoutConstraint(item: bgImage!, attribute: NSLayoutAttribute.top, relatedBy: NSLayoutRelation.equal, toItem: self.contentView, attribute: NSLayoutAttribute.top, multiplier: 1.0, constant: 40)
+//            let top: NSLayoutConstraint = NSLayoutConstraint(item: bgImage!, attribute: NSLayoutAttribute.top, relatedBy: NSLayoutRelation.equal, toItem: self.contentView, attribute: NSLayoutAttribute.top, multiplier: 1.0, constant: 40)
+            
+             let top: NSLayoutConstraint = NSLayoutConstraint(item: bgImage!, attribute: NSLayoutAttribute.top, relatedBy: NSLayoutRelation.equal, toItem: self.titleLb!, attribute: NSLayoutAttribute.bottomMargin, multiplier: 1.0, constant: 10)
             
             let bootom: NSLayoutConstraint = NSLayoutConstraint(item: bgImage!, attribute: NSLayoutAttribute.bottom, relatedBy: NSLayoutRelation.equal, toItem: self.contentView, attribute: NSLayoutAttribute.bottom, multiplier: 1.0, constant: -30)
             let left: NSLayoutConstraint = NSLayoutConstraint(item: bgImage!, attribute: NSLayoutAttribute.left, relatedBy: NSLayoutRelation.equal, toItem: self.contentView, attribute: NSLayoutAttribute.left, multiplier: 1.0, constant: 0)
             
             let right: NSLayoutConstraint = NSLayoutConstraint(item: bgImage!, attribute: NSLayoutAttribute.right, relatedBy: NSLayoutRelation.equal, toItem: self.contentView, attribute: NSLayoutAttribute.right, multiplier: 1.0, constant: 0)
-            
+            // 因为titleLb的frame未确定，所以调用titleLb会导致crash，需要调取superView
+            titleLb?.superview?.addConstraint(top)
 //            bgImage?.addConstraint(top)
-            self.contentView.addConstraints([top,bootom,left,right])
+            self.contentView.addConstraints([bootom,left,right])
             
             
         }
