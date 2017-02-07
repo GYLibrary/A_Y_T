@@ -10,6 +10,7 @@ import UIKit
 import AVKit
 import AVFoundation
 import MediaPlayer
+import GYNetWorking
 
 class ViewController: UIViewController {
 

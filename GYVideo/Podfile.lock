@@ -1,15 +1,18 @@
 PODS:
   - Alamofire (4.2.0)
+  - GYNetWorking (0.0.9)
   - SnapKit (3.1.2)
 
 DEPENDENCIES:
   - Alamofire
+  - GYNetWorking (~> 0.0.9)
   - SnapKit (~> 3.1.2)
 
 SPEC CHECKSUMS:
   Alamofire: aa2e09d871c9160ac53c90e83c68064a94e3dfbe
+  GYNetWorking: b7bef888204ee14f7204308744e3b7dc5bd362a6
   SnapKit: 12b24f569cb7c143acc9c22b9d91b23e7b1c84a2
 
-PODFILE CHECKSUM: d18dc15f02e5602e3a165729e35c34657285cf01
+PODFILE CHECKSUM: ce6e48df8d7d0a018e571a1a48330affdb53c905
 
 COCOAPODS: 1.2.0.beta.3

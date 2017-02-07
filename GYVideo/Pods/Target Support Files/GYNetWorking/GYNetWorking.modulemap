@@ -1,0 +1,6 @@
+framework module GYNetWorking {
+  umbrella header "GYNetWorking-umbrella.h"
+
+  export *
+  module * { export * }
+}
