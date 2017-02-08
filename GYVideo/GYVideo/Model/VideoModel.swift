@@ -16,7 +16,7 @@
 import UIKit
 import ObjectMapper
 
-class BaseModel: Mappable {
+class VideoModel: Mappable {
     
     var cover: String?
     var title: String?

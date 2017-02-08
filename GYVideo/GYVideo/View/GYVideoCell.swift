@@ -15,6 +15,7 @@
 
 
 import UIKit
+import SDWebImage
 
 class GYVideoCell: UITableViewCell {
 
@@ -33,6 +34,21 @@ class GYVideoCell: UITableViewCell {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         
         createSubViews()
+    }
+    
+    func reloadData(_ model: VideoModel) {
+        
+        titleLb?.text = model.title
+        bgImage?.sd_setImage(with:URL(string:model.cover!), placeholderImage: nil)
+        var timeText = "00:00"
+        if model.length != nil {
+            
+            timeText = String(Int(model.length!)! / 60) + ":" + String(Int(model.length!)! % 60)
+        }
+
+        timeLb?.text = timeText
+        countLb?.text = model.playCount
+        
     }
     
     fileprivate func createSubViews() {

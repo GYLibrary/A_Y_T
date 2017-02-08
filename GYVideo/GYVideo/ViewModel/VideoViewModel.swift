@@ -15,8 +15,9 @@
 
 import UIKit
 import GYNetWorking
+import ObjectMapper
 
-class VideoModel: BaseViewModel {
+class VideoViewModel: BaseViewModel {
 
     
     
@@ -26,15 +27,14 @@ class VideoModel: BaseViewModel {
             
             switch result! {
             case .sucess(let value):
-//                Print(value)
-                self.returnBlock!(value)
-            case .failure(let error):
-//                Print(error)
                 
+                self.setValueData(value)
+                
+                
+            case .failure(let error):
                 if self.errorBlock != nil {
                     self.errorBlock!(error)
                 }
-                
                 
             }
             
@@ -42,4 +42,21 @@ class VideoModel: BaseViewModel {
         
         
     }
+    
+    
+    private func setValueData(_ value:Any){
+        
+        let value1 = value as! [String : Any]
+        
+        let dataArr = value1["videoList"]
+        
+        ///转化为Model数组
+        let arr = Mapper<VideoModel>().mapArray(JSONArray: dataArr as! [[String : Any]])
+        
+        if (arr?.count)! > 0 {
+            self.returnBlock!(arr!)
+        }
+ 
+    }
+    
 }
