@@ -29,6 +29,7 @@ class ViewController: UIViewController {
     }
     
     var pageIndex:NSInteger!
+    var viewModel: VideoViewModel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -74,7 +75,7 @@ class ViewController: UIViewController {
     private func instanceData() {
         
         weak var weakSelf = self
-        let model = VideoViewModel({ (success) in
+        viewModel = VideoViewModel({ (success) in
             Print(success)
             weakSelf?.tableView?.mj_header.endRefreshing()
             weakSelf?.tableView?.mj_footer.endRefreshing()
@@ -98,7 +99,7 @@ class ViewController: UIViewController {
             weakSelf?.tableView?.mj_footer.endRefreshing()
         }
         
-        model.getVideoList("http://c.m.163.com/nc/video/home/0-10.html")
+        viewModel.getVideoList("http://c.m.163.com/nc/video/home/0-10.html")
         
         /*
         let loadingView = DGElasticPullToRefreshLoadingViewCircle()
@@ -107,7 +108,7 @@ class ViewController: UIViewController {
         tableView?.dg_addPullToRefreshWithActionHandler({ [weak self] () -> Void in
             
             self?.pageIndex = 1
-            model.getVideoList("http://c.m.163.com/nc/video/home/0-10.html")
+            viewModel.getVideoList("http://c.m.163.com/nc/video/home/0-10.html")
             self?.tableView?.dg_stopLoading()
             
         }, loadingView: loadingView)
@@ -115,14 +116,14 @@ class ViewController: UIViewController {
         
         tableView?.mj_header = MJRefreshNormalHeader.init(refreshingBlock: { [weak self] () -> Void in
             self?.pageIndex = 0
-            model.getVideoList("http://c.m.163.com/nc/video/home/0-10.html")
+            self?.viewModel.getVideoList("http://c.m.163.com/nc/video/home/0-10.html")
         
         })
         
         tableView?.mj_footer = MJRefreshAutoNormalFooter.init(refreshingBlock: { [weak self] () -> Void in
             
             self?.pageIndex = (weakSelf?.pageIndex)! + 1
-            model.getVideoList(NSString.init(format: "http://c.m.163.com/nc/video/home/%d-10.html", (weakSelf?.pageIndex)!) as String)
+            self?.viewModel.getVideoList(NSString.init(format: "http://c.m.163.com/nc/video/home/%d-10.html", (weakSelf?.pageIndex)!) as String)
             
         })
         
@@ -142,7 +143,8 @@ class ViewController: UIViewController {
 
 }
 
-extension ViewController: UITableViewDelegate,UITableViewDataSource {
+
+extension ViewController: UITableViewDelegate,UITableViewDataSource,UIScrollViewDelegate {
     
     func numberOfSections(in tableView: UITableView) -> Int {
         
@@ -168,6 +170,37 @@ extension ViewController: UITableViewDelegate,UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 280
+    }
+    
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+          
+        let threshold: CGFloat = 0.7
+        let itemPerPage: CGFloat = 280
+        
+        let current = scrollView.contentOffset.y + scrollView.frame.size.height
+        let total = scrollView.contentSize.height
+        
+        let ratio = current / total
+        
+//        let needRead = itemPerPage * threshold + CGFloat(pageIndex) * itemPerPage * 10.0
+        let needRead = threshold + CGFloat(pageIndex) * itemPerPage * 10.0
+
+        let totalItem = itemPerPage * CGFloat(pageIndex + 1)
+        let newThreshold = needRead / totalItem
+        
+        if ratio >= newThreshold {
+            
+            pageIndex = pageIndex + 1
+            
+            viewModel.getVideoList(NSString.init(format: "http://c.m.163.com/nc/video/home/%d-10.html", pageIndex) as String)
+            
+        }
+        
+        
+        
+        
+        
+        
     }
     
 }
