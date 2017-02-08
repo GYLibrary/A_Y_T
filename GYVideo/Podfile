@@ -3,9 +3,11 @@ platform :ios, "8.0"
 use_frameworks!
 target 'GYVideo' do
     
-    pod 'Alamofire'
+    pod 'Alamofire','~> 4.2.0'
     pod 'SnapKit', '~> 3.1.2'
     # pod 'SwiftDrawEnum'
     pod 'GYNetWorking','~> 0.0.9'
     pod 'DGElasticPullToRefresh'
+    pod 'ObjectMapper','~> 2.2.2'
+    
 end

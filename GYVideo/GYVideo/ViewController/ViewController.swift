@@ -32,6 +32,7 @@ class ViewController: UIViewController {
         
         player.play()
     */
+       
         
         tableView = UITableView(frame: self.view.bounds)
 //        tableView?.separatorStyle = .none
@@ -40,6 +41,20 @@ class ViewController: UIViewController {
         tableView?.dataSource = self
         view.addSubview(tableView!)
         tableView?.register(GYVideoCell.self, forCellReuseIdentifier: NSStringFromClass(GYVideoCell.self))
+     
+        Print("123")
+        
+//        VideoModel.getVideoList("http://c.m.163.com/nc/video/home/0-10.html")
+        
+      let model = VideoModel({ (success) in
+            Print(success)
+        }, errorBlock: { (error) in
+            Print(error)
+        }) { (_) in
+            
+        }
+        
+        model.getVideoList("http://c.m.163.com/nc/video/home/0-10.html")
         
     }
 
@@ -72,7 +87,7 @@ extension ViewController: UITableViewDelegate,UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 100
+        return 280
     }
     
 }
