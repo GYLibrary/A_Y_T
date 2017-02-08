@@ -78,7 +78,6 @@ class GYVideoCell: UITableViewCell {
             let right: NSLayoutConstraint = NSLayoutConstraint(item: bgImage!, attribute: NSLayoutAttribute.right, relatedBy: NSLayoutRelation.equal, toItem: self.contentView, attribute: NSLayoutAttribute.right, multiplier: 1.0, constant: 0)
             // 因为titleLb的frame未确定，所以调用titleLb会导致crash，需要调取superView
             titleLb?.superview?.addConstraint(top)
-//            bgImage?.addConstraint(top)
             self.contentView.addConstraints([bootom,left,right])
             
             
