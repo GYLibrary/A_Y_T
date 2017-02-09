@@ -174,21 +174,13 @@ extension ViewController: UITableViewDelegate,UITableViewDataSource,UIScrollView
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
           
-        let threshold: CGFloat = 0.7
-        let itemPerPage: CGFloat = 280
-        
-        let current = scrollView.contentOffset.y + scrollView.frame.size.height
-        let total = scrollView.contentSize.height
-        
-        let ratio = current / total
-        
-//        let needRead = itemPerPage * threshold + CGFloat(pageIndex) * itemPerPage * 10.0
-        let needRead = threshold + CGFloat(pageIndex) * itemPerPage * 10.0
+        let cellHeight: CGFloat = 280
+        let current = scrollView.contentOffset.y
 
-        let totalItem = itemPerPage * CGFloat(pageIndex + 1)
-        let newThreshold = needRead / totalItem
-        
-        if ratio >= newThreshold {
+        let totalItem = cellHeight * CGFloat(CGFloat(pageIndex) + 0.7) * 10 - 64
+//        let newThreshold = needRead / totalItem
+        Print("\(current),\(totalItem),页数:\(pageIndex)")
+        if current >= totalItem {
             
             pageIndex = pageIndex + 1
             
