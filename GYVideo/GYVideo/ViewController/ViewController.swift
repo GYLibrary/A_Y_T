@@ -194,11 +194,6 @@ extension ViewController: UITableViewDelegate,UITableViewDataSource,UIScrollView
             
         }
         
-        
-        
-        
-        
-        
     }
     
 }
