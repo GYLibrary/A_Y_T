@@ -14,7 +14,7 @@ import GYNetWorking
 import DGElasticPullToRefresh
 import MJRefresh
 
-class ViewController: UIViewController {
+class ViewController: BaseViewController {
 
     var tableView: UITableView?
     var dataArr: [VideoModel] = [] {
