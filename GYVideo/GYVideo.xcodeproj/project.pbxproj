@@ -15,6 +15,8 @@
 		B72D3BB31E4AF53C00025807 /* Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = B72D3BB21E4AF53C00025807 /* Tools.swift */; };
 		B74856631E4D93F7003653E6 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74856621E4D93F7003653E6 /* DetailViewController.swift */; };
 		B74856681E4DA1BC003653E6 /* GYPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74856671E4DA1BC003653E6 /* GYPlayer.swift */; };
+		B748566C1E4DB404003653E6 /* MediaItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B748566A1E4DB404003653E6 /* MediaItem.swift */; };
+		B748566D1E4DB404003653E6 /* MediaManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B748566B1E4DB404003653E6 /* MediaManager.swift */; };
 		B7F67EA11E48657E0052699E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F67EA01E48657E0052699E /* AppDelegate.swift */; };
 		B7F67EA61E48657E0052699E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7F67EA41E48657E0052699E /* Main.storyboard */; };
 		B7F67EA81E48657E0052699E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7F67EA71E48657E0052699E /* Assets.xcassets */; };
@@ -54,6 +56,8 @@
 		B72D3BB21E4AF53C00025807 /* Tools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tools.swift; sourceTree = "<group>"; };
 		B74856621E4D93F7003653E6 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		B74856671E4DA1BC003653E6 /* GYPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GYPlayer.swift; sourceTree = "<group>"; };
+		B748566A1E4DB404003653E6 /* MediaItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaItem.swift; sourceTree = "<group>"; };
+		B748566B1E4DB404003653E6 /* MediaManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaManager.swift; sourceTree = "<group>"; };
 		B7F67E9D1E48657E0052699E /* GYVideo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GYVideo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7F67EA01E48657E0052699E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B7F67EA51E48657E0052699E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -149,6 +153,8 @@
 		B74856661E4DA192003653E6 /* VideoPlayer */ = {
 			isa = PBXGroup;
 			children = (
+				B748566A1E4DB404003653E6 /* MediaItem.swift */,
+				B748566B1E4DB404003653E6 /* MediaManager.swift */,
 				B74856671E4DA1BC003653E6 /* GYPlayer.swift */,
 			);
 			path = VideoPlayer;
@@ -413,12 +419,14 @@
 				B72D3B9D1E4AE1D700025807 /* GYVideoCell.swift in Sources */,
 				B7F67EE81E49B84D0052699E /* GYLabel.swift in Sources */,
 				B72D3B9E1E4AE1D700025807 /* ViewController.swift in Sources */,
+				B748566D1E4DB404003653E6 /* MediaManager.swift in Sources */,
 				B72D3BB11E4AEF4E00025807 /* VideoViewModel.swift in Sources */,
 				B72D3BAB1E4AE4D800025807 /* VideoModel.swift in Sources */,
 				B74856681E4DA1BC003653E6 /* GYPlayer.swift in Sources */,
 				B7F67EA11E48657E0052699E /* AppDelegate.swift in Sources */,
 				B72D3BAF1E4AE98B00025807 /* BaseViewModel.swift in Sources */,
 				B72D3BB31E4AF53C00025807 /* Tools.swift in Sources */,
+				B748566C1E4DB404003653E6 /* MediaItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

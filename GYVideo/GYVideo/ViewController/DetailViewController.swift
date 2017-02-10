@@ -14,6 +14,8 @@
 //  Real developers ship.
 
 import UIKit
+import SnapKit
+import BMPlayer
 
 class DetailViewController: UIViewController {
     
@@ -21,6 +23,25 @@ class DetailViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+//        MediaManager.sharedInstance.playEmbeddedVideo(url:  URL(string:"http://yyygwz.com/index.php?url=https://v.qq.com/x/cover/jk97cgptoachp45/o0022kxbsz4.html")!, embeddedContentView: view)
+        
+        let player = BMPlayer()
+        view.addSubview(player)
+        player.snp.makeConstraints { (make) in
+            make.top.equalTo(self.view).offset(20)
+            make.left.right.equalTo(self.view)
+            make.height.equalTo(player.snp.width).multipliedBy(9.0/16.0).priority(750)
+        }
+        
+        player.playWithURL( URL(string:"http://flv2.bn.netease.com/tvmrepo/2017/2/O/P/ECBNDIHOP/SD/ECBNDIHOP-mobile.mp4")!)
+        
+        if player.backBlock != nil {
+            player.backBlock!(true)
+        }
+        
+        
+        
 
     }
     
