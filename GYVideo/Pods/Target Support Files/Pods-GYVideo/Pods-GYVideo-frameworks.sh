@@ -91,6 +91,8 @@ strip_invalid_archs() {
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "$BUILT_PRODUCTS_DIR/Alamofire/Alamofire.framework"
   install_framework "$BUILT_PRODUCTS_DIR/DGElasticPullToRefresh/DGElasticPullToRefresh.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/EZPlayer/EZPlayer.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/GYNavTranstion/GYNavTranstion.framework"
   install_framework "$BUILT_PRODUCTS_DIR/GYNetWorking/GYNetWorking.framework"
   install_framework "$BUILT_PRODUCTS_DIR/MJRefresh/MJRefresh.framework"
   install_framework "$BUILT_PRODUCTS_DIR/ObjectMapper/ObjectMapper.framework"
@@ -100,6 +102,8 @@ fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "$BUILT_PRODUCTS_DIR/Alamofire/Alamofire.framework"
   install_framework "$BUILT_PRODUCTS_DIR/DGElasticPullToRefresh/DGElasticPullToRefresh.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/EZPlayer/EZPlayer.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/GYNavTranstion/GYNavTranstion.framework"
   install_framework "$BUILT_PRODUCTS_DIR/GYNetWorking/GYNetWorking.framework"
   install_framework "$BUILT_PRODUCTS_DIR/MJRefresh/MJRefresh.framework"
   install_framework "$BUILT_PRODUCTS_DIR/ObjectMapper/ObjectMapper.framework"

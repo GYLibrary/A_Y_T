@@ -1,0 +1,6 @@
+framework module GYNavTranstion {
+  umbrella header "GYNavTranstion-umbrella.h"
+
+  export *
+  module * { export * }
+}
