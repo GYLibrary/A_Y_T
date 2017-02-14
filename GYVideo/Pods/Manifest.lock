@@ -7,6 +7,7 @@ PODS:
   - EZPlayer (0.0.1)
   - GYNavTranstion (0.0.2)
   - GYNetWorking (0.0.9)
+  - Masonry (1.0.2)
   - MJRefresh (3.1.12)
   - NVActivityIndicatorView (3.4)
   - ObjectMapper (2.2.2)
@@ -14,6 +15,8 @@ PODS:
     - SDWebImage/Core (= 3.8.2)
   - SDWebImage/Core (3.8.2)
   - SnapKit (3.1.2)
+  - ZFPlayer (2.1.1):
+    - Masonry
 
 DEPENDENCIES:
   - Alamofire (~> 4.2.0)
@@ -26,6 +29,7 @@ DEPENDENCIES:
   - ObjectMapper (~> 2.2.2)
   - SDWebImage (~> 3.8.2)
   - SnapKit (~> 3.1.2)
+  - ZFPlayer
 
 SPEC CHECKSUMS:
   Alamofire: aa2e09d871c9160ac53c90e83c68064a94e3dfbe
@@ -34,12 +38,14 @@ SPEC CHECKSUMS:
   EZPlayer: 1cd1f25c7b13094f9898cd38ffe7d799a67bfdb9
   GYNavTranstion: 53a3bcaabd209e691c6ad3bbb9618deedc245084
   GYNetWorking: b7bef888204ee14f7204308744e3b7dc5bd362a6
+  Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
   MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
   NVActivityIndicatorView: 5754be63ceecd1df8af37d3c088d81872feeb8b8
   ObjectMapper: 9e385c2295bcc4e16eabbcfc85db801442bba545
   SDWebImage: '098e97e6176540799c27e804c96653ee0833d13c'
   SnapKit: 12b24f569cb7c143acc9c22b9d91b23e7b1c84a2
+  ZFPlayer: c36657da33c28c75dfb100e98e7976b5b3e1fc10
 
-PODFILE CHECKSUM: a226033fdf0739e475384dfe55910764568ff848
+PODFILE CHECKSUM: b0c7e34bcc6baa7db352f56225835ca52eaa623a
 
 COCOAPODS: 1.2.0.beta.3
