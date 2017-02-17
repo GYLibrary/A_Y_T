@@ -40,6 +40,29 @@ class VideoViewModel: BaseViewModel {
             
         }
         
+//        requestForJSONResult(GYNetWorkMethod.POST, url: "https://app.kujiang.com/v1/book/read_new", params: ["auth_code":"a3a7e8cfef43441c3983f9e22865607f","book":"30239","chapter":"467164"]) { (result) in
+//            switch result! {
+//            case .sucess(let value):
+//                
+//                    Print(value)
+//                
+//            case .failure(let error):
+//                Print(error)
+//                
+//            }
+//        }
+        
+        requestForJSONResult(GYNetWorkMethod.POST, url: "https://app.kujiang.com/v1/book/read_new", params: ["auth_code":"a3a7e8cfef43441c3983f9e22865607f","book":"25129","chapter":"532841","isvip":"1"]) { (result) in
+            switch result! {
+            case .sucess(let value):
+                
+                Print(value)
+                
+            case .failure(let error):
+                Print(error)
+                
+            }
+        }
         
     }
     
