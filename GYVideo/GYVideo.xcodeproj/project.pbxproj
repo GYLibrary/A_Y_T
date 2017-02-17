@@ -25,6 +25,7 @@
 		B7F67EB61E48657E0052699E /* GYVideoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F67EB51E48657E0052699E /* GYVideoTests.swift */; };
 		B7F67EC11E48657E0052699E /* GYVideoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F67EC01E48657E0052699E /* GYVideoUITests.swift */; };
 		B7F67EE81E49B84D0052699E /* GYLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F67EE71E49B84D0052699E /* GYLabel.swift */; };
+		B7FE9BFA1E56C45600CA3433 /* GYNetWorkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7FE9BF91E56C45600CA3433 /* GYNetWorkManager.swift */; };
 		BD938B6D3926AA04639D83B1 /* Pods_GYVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABC3BF72F229FEDD38D404D6 /* Pods_GYVideo.framework */; };
 /* End PBXBuildFile section */
 
@@ -73,6 +74,7 @@
 		B7F67EC01E48657E0052699E /* GYVideoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GYVideoUITests.swift; sourceTree = "<group>"; };
 		B7F67EC21E48657E0052699E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B7F67EE71E49B84D0052699E /* GYLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GYLabel.swift; sourceTree = "<group>"; };
+		B7FE9BF91E56C45600CA3433 /* GYNetWorkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GYNetWorkManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -224,10 +226,19 @@
 		B7F67EE61E49B8290052699E /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				B7FE9BF81E56C41700CA3433 /* NetWork */,
 				B7F67EE71E49B84D0052699E /* GYLabel.swift */,
 				B72D3BB21E4AF53C00025807 /* Tools.swift */,
 			);
 			path = Tools;
+			sourceTree = "<group>";
+		};
+		B7FE9BF81E56C41700CA3433 /* NetWork */ = {
+			isa = PBXGroup;
+			children = (
+				B7FE9BF91E56C45600CA3433 /* GYNetWorkManager.swift */,
+			);
+			path = NetWork;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -426,6 +437,7 @@
 				B748566D1E4DB404003653E6 /* MediaManager.swift in Sources */,
 				B72D3BB11E4AEF4E00025807 /* VideoViewModel.swift in Sources */,
 				B72D3BAB1E4AE4D800025807 /* VideoModel.swift in Sources */,
+				B7FE9BFA1E56C45600CA3433 /* GYNetWorkManager.swift in Sources */,
 				B74856681E4DA1BC003653E6 /* GYPlayer.swift in Sources */,
 				B7F67EA11E48657E0052699E /* AppDelegate.swift in Sources */,
 				B72D3BAF1E4AE98B00025807 /* BaseViewModel.swift in Sources */,
