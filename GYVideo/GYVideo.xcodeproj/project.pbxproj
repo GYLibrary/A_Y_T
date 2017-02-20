@@ -18,6 +18,7 @@
 		B748566C1E4DB404003653E6 /* MediaItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B748566A1E4DB404003653E6 /* MediaItem.swift */; };
 		B748566D1E4DB404003653E6 /* MediaManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B748566B1E4DB404003653E6 /* MediaManager.swift */; };
 		B748566F1E4DC02A003653E6 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B748566E1E4DC02A003653E6 /* BaseViewController.swift */; };
+		B7DBCB621E5AC78C00C5D7A3 /* DemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DBCB611E5AC78C00C5D7A3 /* DemoView.swift */; };
 		B7F67EA11E48657E0052699E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F67EA01E48657E0052699E /* AppDelegate.swift */; };
 		B7F67EA61E48657E0052699E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7F67EA41E48657E0052699E /* Main.storyboard */; };
 		B7F67EA81E48657E0052699E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7F67EA71E48657E0052699E /* Assets.xcassets */; };
@@ -61,6 +62,7 @@
 		B748566A1E4DB404003653E6 /* MediaItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaItem.swift; sourceTree = "<group>"; };
 		B748566B1E4DB404003653E6 /* MediaManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaManager.swift; sourceTree = "<group>"; };
 		B748566E1E4DC02A003653E6 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		B7DBCB611E5AC78C00C5D7A3 /* DemoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoView.swift; sourceTree = "<group>"; };
 		B7F67E9D1E48657E0052699E /* GYVideo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GYVideo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7F67EA01E48657E0052699E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B7F67EA51E48657E0052699E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -124,6 +126,7 @@
 			isa = PBXGroup;
 			children = (
 				B72D3B991E4AE1D700025807 /* GYVideoCell.swift */,
+				B7DBCB611E5AC78C00C5D7A3 /* DemoView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -442,6 +445,7 @@
 				B7F67EA11E48657E0052699E /* AppDelegate.swift in Sources */,
 				B72D3BAF1E4AE98B00025807 /* BaseViewModel.swift in Sources */,
 				B72D3BB31E4AF53C00025807 /* Tools.swift in Sources */,
+				B7DBCB621E5AC78C00C5D7A3 /* DemoView.swift in Sources */,
 				B748566C1E4DB404003653E6 /* MediaItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
