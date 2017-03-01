@@ -23,12 +23,10 @@ class GYLabel: UILabel {
         self.font = UIFont.systemFont(ofSize: 16.0)
         self.textColor = UIColor.black
         
-        
     }
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        
         
     }
     
